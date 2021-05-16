@@ -16,7 +16,7 @@ var navigation = require('./api/navigation.js');
 app.use(express.static(path.join(__dirname, 'public')));
 
 // server listens on port 9002 for incoming connections
-app.listen(port, () => console.log('Listening on port', port));
+app.listen(process.env.PORT || port, () => console.log('Listening...'));
 
 app.use('/', navigation);
 
