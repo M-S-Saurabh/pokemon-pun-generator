@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Pokemon Pun Generator</title>
+  </head>
+  <body>
+    <div class="container">
+        <h2> Pokemon Pun  Generator </h2>
+
+        <div class="row">
+            <form class="col-md-6" id="sentenceForm">
+                <div class="form-group">
+                    <label for="inputSentence">Enter your sentence</label>
+                    <textarea class="form-control" name='sentence' id="inputSentence" rows="3" required></textarea>
+                </div>
+    
+                <button type="submit" class="btn btn-primary btn-md">Submit</button>
+    
+                <div class="form-group mt-10">
+                    <label for="resultPun">Pun-ified result</label>
+                    <textarea class="form-control" id="resultPun" rows="3" disabled></textarea>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
